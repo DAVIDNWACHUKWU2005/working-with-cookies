@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web development">
+    <title>Work with cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>       
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dokdo&family=Knewave&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+    <link rel="stylesheet" href="./assets/css/style.css" media="all">
+    <script type="module" src="./assets/js/index.js" defer ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container grid-center ">
+        
+     <div class = "contain-main-content grid-center">
+        
+       
+        <div class="blur">
+            <p class="main-text ">
+                HTTP cookies (also called web cookies, Internet cookies, 
+                browser cookies, or simply cookies) are small blocks of 
+                data created by a web server while a user is browsing a 
+                website and placed on the user's computer or other device
+                by the user's web browser.
+            </p>
+        </div>
+        <div class="cookie-pop-up ">
+            <div class="pop-up-content">
+                <p>We use cookies to 
+                    improve uour experience on our website.
+                     By clicking "Accept all",
+                     you agree to the use of cookies for marketing 
+                     and analytics purposes.</p>
+
+                <button class="accept-all">Accept All</button>
+                <button class="settings">Settings</button>
+            </div>
+        </div>
+    
+       
+        <div class="settings-pop-up hidden ">
+            <div class="pop-up-content">
+                <h3>Cookie Settings</h3>
+                <label class="switch">
+                    <span class="label-text">Browser Info</span>
+                    <input type="checkbox" name="cookie_browser" checked>
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <span class="label-text">Operating System&nbsp;</span>
+                    <input type="checkbox" name="cookie_os" checked>
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <span class="label-text">Screen Width</span>
+                    <input type="checkbox" name="cookie_width" checked>
+                    <span class="slider round"></span>
+                </label>
+                <label class="switch">
+                    <span class="label-text">Screen Height</span>
+                    <input type="checkbox" name="cookie_height" checked>
+                    <span class="slider round"></span>
+                </label>
+                <button class="save-preferences">Save Preferences</button>
+            </div>
+        </div>
+    
+      
+        </div>
+
+    </div>
+    </div>
+
+</body>
+</html>

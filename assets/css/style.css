@@ -1,0 +1,99 @@
+
+:root {
+    --app-background-color: #edf1f5;
+    --app-popup-bg: #fff;
+    --app-button-bg: #555fe4;
+    --app-button-hover-bg: #3339e6;
+    --app-font-color: #000;
+    --app-border-radius: 10px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--app-background-color);
+    color: var(--app-font-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.grid-center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.hero-banner {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
+    height: 100dvh;
+}
+
+.cookie-pop-up, .settings-pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: var(--app-popup-bg);
+    border-radius: var(--app-border-radius);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accept-all, .settings, .save-preferences {
+    background-color: var(--app-button-bg);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+}
+
+.accept-all:hover, .settings:hover, .save-preferences:hover {
+    background-color: var(--app-button-hover-bg);
+}
+
+.switch {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.slider {
+    width: 60px;
+    height: 34px;
+    background: #ccc;
+    border-radius: 34px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
